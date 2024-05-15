@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf0d4"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40px"
+        android:background="@drawable/circular_button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="58dp"
+            android:fontFamily="@font/font_ostritch"
+            android:text="Own Tasks now"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/font_ostritch"
+            android:text="Manage Your"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.221"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/deleteAll"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circular_button"
+        android:backgroundTint="#FF5722"
+        android:text="×"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20px"
+        android:layout_marginTop="243dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="690dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/view" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="#f2a56a"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

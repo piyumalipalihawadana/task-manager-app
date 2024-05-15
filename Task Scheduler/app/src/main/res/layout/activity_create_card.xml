@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fdf0d4"
+    android:padding="20dp"
+    tools:context=".CreateCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="880dp"
+        android:background="@drawable/circular_button4"
+        android:backgroundTint="#000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".CreateCard">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:gravity="center"
+
+            android:layout_marginTop="10dp"
+            android:text="Enter Your Task"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/create_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittetext"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Priority"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#BFBBBB" />
+
+        <EditText
+            android:id="@+id/create_title"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="510px"
+            android:layout_marginHorizontal="10dp"
+
+            android:background="@drawable/custom_edittetext"
+            android:hint="Enter Task"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#BFBBBB" />
+
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_button3"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Save" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
